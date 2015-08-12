@@ -1,6 +1,8 @@
 # resonance
 Artist Leaderboard project for Hackathon 2015
 
+[![Build Status](https://travis-ci.org/artsy/resonance.svg?branch=master)](https://travis-ci.org/artsy/resonance)
+
 ## Setup
 
 Fork the repo.
