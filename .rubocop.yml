@@ -1,0 +1,25 @@
+Documentation:
+  Enabled: false
+
+StringLiterals:
+  Enabled: false
+
+# Metrics/ClassLength:
+#   Max: 120
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+  - lib/tasks/legacy.rake
+  - test/**/*
+
+AllCops:
+  Exclude:
+  - bin/*
+  - db/**/*
+  - vendor/**/*
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - config/application.rb
+  - config/environments/*
