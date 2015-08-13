@@ -31,6 +31,9 @@
 .main-list-name {
   width: ($col-width * 4) + ($gutter-size * 2);
   @include garamond(30px);
+  line-height: 1em;
+  position: relative;
+  top: 30px;
 }
 
 .main-list-stat-label {
