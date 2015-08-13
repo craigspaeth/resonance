@@ -24,3 +24,16 @@
 .intro-left {
   padding-right: ($gutter-size / 2);
 }
+
+@media (max-width: 667px) {
+  .intro-left, .intro-right {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .intro-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
