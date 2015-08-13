@@ -11,3 +11,12 @@ before_script:
 - psql -c 'create database resonance_test;' -U postgres
 - RAILS_ENV=test bundle exec rake --trace db:migrate
 - bundle exec rake db:test:prepare
+deploy:
+  provider: heroku
+  app: resonance-production
+  on: master
+  run: 
+  - rake db:migrate
+  - restart
+  api_key:
+    secure: a2OhwDufLLfJCtY+hWc6CJYLPxj6saG6V+fHbR+dvgEMzXzB1TFbp7Yq/tOnfyE6919tPnJaFluNJq0PoXhAUTN7WJhk47SEgKVOBEeGhOSKMGt9tVxyRq75UQ3qVjQ52lVbgoAt5aTZX+8CHLvTXdKv/n3xbuu8omhdljp1ymNZp5pj0ali2Dlc77y8wnEtqV1LnVUDCARG/wRYXY0+L2jLOA5eESlTwAzODZWMmEPnqKir/D57gsDNzDhhH9i6CVPczA7bjIifpfnKWabcBFWs0oCofNuANt4NSvaFR6GvR1Ga62HKKjq8ugGKEGKRBOEpu5NAX+hlWKb6WCn/zcU69OAVKBESKE53RrCOIvJVozu12tF5rdFMj34hjv4pPNzMkJxUEadoPWwFZXPSvoA/V+DEhon2g5bDVrHrt8lLdlJf5gSMip4SUCbIQx1WwoHW5OQF4bb0ya3DL1u4CURjjlN2inVBxM6zvKweowf+ofF2vcibA+U3gVR52MyskJJVQOpMsaFJvpdmmEv5I81d4lZd5Ff1iVp+yHofCVzsMgkUX4l0LuzeqOtZgGjjKE4Ple4q5PcSK6ddiqIHHrALdIdnM1uud1q+AnXaWZIFvkXeQD1P5Cq3oiGQLm1jgFcMYlmkRzVTIsc4Jk0WgQDjWfXo5WeirWzAXcB91aI=
