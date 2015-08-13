@@ -1,0 +1,51 @@
+@import "lib";
+
+.main-list {
+  list-style: none;
+  border-top: 1px solid $dark-gray-color;
+  padding-top: $gutter-size;
+  margin-top: ($gutter-size * 2);
+}
+
+.main-list-number, .main-list-img, .main-list-name, .main-list-stat {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: $gutter-size;
+}
+
+.main-list-number {
+  @include avantgarde(24px);
+  width: $col-width;
+}
+
+.main-list-img {
+  width: ($col-width * 2) + $gutter-size;
+}
+
+.main-list-name {
+  width: ($col-width * 3) + ($gutter-size * 2);
+  @include garamond(30px);
+}
+
+.main-list-stat-label {
+  @include avantgarde(11px);
+  color: $gray-color;
+  margin-bottom: 10px;
+}
+
+.main-list-state-number {
+  @include garamond(30px);
+}
+
+.main-list-stat {
+  width: ($col-width * 2) + $gutter-size;
+}
+
+.main-list-stat:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.main-list-item-left, .main-list-item-right {
+  display: inline-block;
+  vertical-align: top;
+}

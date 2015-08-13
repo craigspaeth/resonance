@@ -1,0 +1,26 @@
+@import "lib";
+
+.intro h1 {
+  @include garamond(50px);
+  font-weight: normal;
+  margin: 0;
+}
+
+.intro h2 {
+  @include avantgarde(13px);
+  margin: 0 0 ($gutter-size / 2) 0;
+}
+
+.intro-left, .intro-right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.intro-right {
+  padding-left: ($gutter-size / 2);
+}
+
+.intro-left {
+  padding-right: ($gutter-size / 2);
+}

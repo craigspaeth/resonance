@@ -1,0 +1,20 @@
+@import "lib";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include garamond(17px);
+  background: black;
+  color: white;
+}
+
+p {
+  margin-bottom: 1em;
+}

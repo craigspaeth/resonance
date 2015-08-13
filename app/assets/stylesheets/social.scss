@@ -1,0 +1,16 @@
+@import "lib";
+
+.social-nav a {
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.social-nav img {
+  height: 26px;
+}
