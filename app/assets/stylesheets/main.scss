@@ -16,18 +16,23 @@
 
 .main.active {
   opacity: 1;
-  .main-list-item {
-    opacity: 1;
-  }
+}
+
+.main.active .main-list-item {
+  opacity: 1;
+  left: 0;
 }
 
 .main-list-item {
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.5s ease-out, left 0.5s ease-out;
+  position: relative;
+  left: 0;
 }
 
 @for $i from 1 through 20 {
   .main-list-item:nth-child(#{$i}) {
     transition-delay: #{$i / 5}s;
+    left: #{$i * 50}px;
   }
 }
