@@ -1,5 +1,6 @@
+- twitter_desc = "Check out the top trending artists from Artsy! #ArtsyHackathon"
 %nav.social-nav
-  %a= image_tag "fb.svg"
-  %a= image_tag "twitter.svg"
-  %a= image_tag "google.svg"
-  %a= image_tag "linkedin.svg"
+  %a{ href: "https://www.facebook.com/sharer/sharer.php?u=#{@current_url}", "data-service" => 'Facebook' }= image_tag "fb.svg"
+  %a{ href: "https://twitter.com/intent/tweet?original_referer=#{@current_url}&text=#{CGI.escape twitter_desc}&url=#{@current_url}&via=artsy", "data-service" => 'Twitter' }= image_tag "twitter.svg"
+  / %a{ href: "https://www.facebook.com/sharer/sharer.php?u=#{@current_url}", "data-service" => 'Facebook' }= image_tag "google.svg"
+  / %a{ href: "https://www.facebook.com/sharer/sharer.php?u=#{@current_url}", "data-service" => 'Facebook' }= image_tag "linkedin.svg"
