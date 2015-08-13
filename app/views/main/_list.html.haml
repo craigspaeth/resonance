@@ -3,8 +3,9 @@
     %li.main-list-item
       .main-list-item-left
         .main-list-number= i + 1
-        %img.main-list-img{ src: artist.thumbnail }
-        .main-list-name= artist.name
+        %a{ href: "http://artsy.net/artist/#{artist.slug}", target: '_blank' }
+          %img.main-list-img{ src: artist.thumbnail }
+          .main-list-name= artist.name
       .main-list-item-right
         / .main-list-stat
         /   .main-list-stat-label Pageviews
