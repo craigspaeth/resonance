@@ -13,6 +13,7 @@ gem 'puma'
 gem 'haml-rails'
 gem 'bourbon'
 gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'mongo'
 
 group :development, :test do
   gem 'byebug'
