@@ -9,6 +9,20 @@
   vertical-align: top;
   padding: 7px;
   margin: 0 12px 0 0;
+  transition: background 0 ease-in, transform 0 ease-in, border-color 0 ease-in;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.social-nav a:hover {
+  background: white;
+  border-color: white;
+  transform: scale(1.3);
+  transition-duration: 0.1s;
+}
+
+.social-nav a:hover img {
+  @include filter(invert(100%));
 }
 
 .social-nav img {
