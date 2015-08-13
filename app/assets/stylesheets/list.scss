@@ -7,6 +7,12 @@
   margin-top: ($gutter-size * 2);
 }
 
+.main-list-item {
+  margin-bottom: $gutter-size;
+  border-bottom: 1px solid $dark-gray-color;
+  padding-bottom: $gutter-size;
+}
+
 .main-list-number, .main-list-img, .main-list-name, .main-list-stat {
   display: inline-block;
   vertical-align: top;

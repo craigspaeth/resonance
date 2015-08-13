@@ -1,16 +1,17 @@
 %ul.main-list
-  %li.main-list-item
-    .main-list-item-left
-      .main-list-number 1
-      %img.main-list-img{ src: 'https://s3.amazonaws.com/f.cl.ly/items/3Z3y1R04092Z1y2F3t3T/Image%202015-08-12%20at%207.36.26%20PM.png' }
-      .main-list-name Andy Warhol
-    .main-list-item-right
-      .main-list-stat
-        .main-list-stat-label Pageviews
-        .main-list-state-number 250k
-      .main-list-stat
-        .main-list-stat-label Tweets
-        .main-list-state-number 10
-      .main-list-stat
-        .main-list-stat-label Tweets
-        .main-list-state-number 10
+  - @artists.each_with_index do |artist, i|
+    %li.main-list-item
+      .main-list-item-left
+        .main-list-number= i + 1
+        %img.main-list-img{ src: artist.thumbnail }
+        .main-list-name= artist.name
+      .main-list-item-right
+        .main-list-stat
+          .main-list-stat-label Pageviews
+          .main-list-state-number= artist.page_views
+        .main-list-stat
+          .main-list-stat-label Follows
+          .main-list-state-number= artist.follows
+        .main-list-stat
+          .main-list-stat-label Score
+          .main-list-state-number= artist.score
