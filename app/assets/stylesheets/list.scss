@@ -94,6 +94,13 @@
   }
 }
 
+.main-list-stat-break {
+  display: block;
+  height: $gutter-size;
+  width: 100%;
+  position: relative;
+}
+
 @media (max-width: 667px) {
 
   .main-list-item-left, .main-list-item-right {
