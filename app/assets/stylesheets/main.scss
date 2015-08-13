@@ -10,4 +10,24 @@
   display: block;
   margin-top: 150px;
   padding: 0 $gutter-size;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.main.active {
+  opacity: 1;
+  .main-list-item {
+    opacity: 1;
+  }
+}
+
+.main-list-item {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+@for $i from 1 through 20 {
+  .main-list-item:nth-child(#{$i}) {
+    transition-delay: #{$i / 5}s;
+  }
 }
