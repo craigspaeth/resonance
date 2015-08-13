@@ -25,12 +25,15 @@
 }
 
 .main-list-img {
-  width: ($col-width * 2) + $gutter-size;
+  width: $col-width + $gutter-size;
 }
 
 .main-list-name {
-  width: ($col-width * 3) + ($gutter-size * 2);
+  width: ($col-width * 4) + ($gutter-size * 2);
   @include garamond(30px);
+  line-height: 1em;
+  position: relative;
+  top: 30px;
 }
 
 .main-list-stat-label {
@@ -89,11 +92,11 @@
   }
 
   .main-list-img {
-    width: 30%;
+    width: 25%;
   }
 
   .main-list-name {
-    width: 60%;
+    width: 65%;
     padding-left: $gutter-size;
   }
 }

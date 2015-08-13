@@ -6,15 +6,15 @@
         %img.main-list-img{ src: artist.thumbnail }
         .main-list-name= artist.name
       .main-list-item-right
-        .main-list-stat
-          .main-list-stat-label Pageviews
-          .main-list-state-number= num_to_k artist.page_views
+        / .main-list-stat
+        /   .main-list-stat-label Pageviews
+        /   .main-list-state-number= num_to_k artist.page_views
         .main-list-stat
           .main-list-stat-label Follows
           .main-list-state-number= num_to_k artist.follows
         .main-list-stat
           .main-list-stat-label Score
-          .main-list-state-number= artist.score
+          .main-list-state-number= num_to_k artist.score
         / Don't forget this break if we get more stats
         / .main-list-stat-break
         / .main-list-stat
