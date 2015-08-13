@@ -4,6 +4,9 @@ Documentation:
 StringLiterals:
   Enabled: false
 
+Metrics/LineLength:
+  Max: 110
+
 # Metrics/ClassLength:
 #   Max: 120
 

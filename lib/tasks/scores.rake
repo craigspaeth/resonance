@@ -18,7 +18,7 @@ namespace :scores do
         a.name = gravity_artist['display_name'] || "#{gravity_artist['first']} #{gravity_artist['last']}"
         a.artsy_id = gravity_artist['_id'].to_s
         a.thumbnail = gravity_artist['image_urls']['square']
-        a.page_views = SecureRandom.random_number(10000)
+        a.page_views = SecureRandom.random_number(10_000)
         a.follows = gravity_artist['follow_count'] || 0
       end
       artist.calculate_score!
